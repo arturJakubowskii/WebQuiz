@@ -50,8 +50,10 @@ document.getElementById("app").innerHTML = `
 
 startTimer();
 
+
 function onTimesUp() {
     clearInterval(timerInterval);
+    timePassed = 0;
 }
 
 function startTimer() {

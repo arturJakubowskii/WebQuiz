@@ -7,15 +7,17 @@
     <link rel="stylesheet" type="text/css" href="../CSS/mainIndex.css">
     <link rel="stylesheet" type="text/css" href="../CSS/timerCSS.css">
     <script src="../JS/timer.js" defer></script>
+    <script src="../JS/pointsCounter.js"></script>
+    <script src="../JS/QuestionCounter.js"></script>
 </head>
 
 <body>
     <div class="topBar">
         <div class="pointsCounter">
-            Your Points:
+            <p id="points">Your Points: 0</p>
         </div>
         <div class="questionNumber">
-            Question Number:
+            <p id="questionNumber">Question Number: 1</p>
         </div>
         <div id="app"></div>
     </div>
@@ -28,19 +30,12 @@
     </div>
 
     <div class="answersContainer">
-        <button id="answer1">
-            answer1
-        </button>
-        <button id="answer2">
-            answer2
-        </button>
-        <button id="answer3">
-            answer3
-        </button>
-        <button id="answer4">
-            answer4
-        </button>
+        <button id="answer1" onclick="addPoints();nextQuestion();">answer1</button>
+        <button id="answer2" onclick="addPoints();nextQuestion();">answer2</button>
+        <button id="answer3" onclick="addPoints();nextQuestion();">answer3</button>
+        <button id="answer4" onclick="addPoints();nextQuestion();">answer4</button>
     </div>
+
 
 </body>
 

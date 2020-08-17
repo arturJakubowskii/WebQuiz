@@ -3,7 +3,7 @@ body{
 }
 .questionContainer{
     background-color: crimson;
-    width: 50em;
+    width: 40%;
     height: 15em;
     margin: auto;
     text-align: center;
@@ -17,7 +17,7 @@ body{
     width: calc(100% - 250px);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2em;
+    grid-gap: 2%;
     margin: auto;
 }
 #answer1{
@@ -51,29 +51,29 @@ body{
 }
 .pointsCounter{
     background-color: darkgoldenrod;
-    width: 15em;
+    width: 200%;
     padding: 30px 0;
     text-align: center;
-    margin-left: 10em;
 }
 .topBar{
     background-color: fuchsia;
-    padding: 15px 0;
-    width: calc(100% - 250px);
+    padding: 1% 0;
+    width: calc(100% - 10%);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20em;
+    grid-gap: 20%;
     margin: auto;
+    padding-left: 10%;
 }
 .questionNumber{
     background-color: mediumvioletred;
-    width: 15em;
+    width: 200%;
     padding: 30px 0;
     text-align: center;
 }
 .timer{
     background-color: darkgreen;
-    width: 15em;
+    width: 200%;
     padding: 30px 0;
     text-align: center;
 }

@@ -1,78 +1,84 @@
 body{
-    background: bisque;
+    background-image: url(../images/89249.jpg);
 }
 .questionContainer{
-    background-color: crimson;
+    background-color: dodgerblue;
     width: 40%;
-    height: 15em;
+    height: 25em;
     margin: auto;
     text-align: center;
-    margin-top: 4%;
-    margin-bottom: 7%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: white;
 }
 .question{
 
 }
 .answersContainer{
-    width: calc(100% - 250px);
+    width: calc(100% - 25%);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2%;
     margin: auto;
 }
 #answer1{
-    background-color: aqua;
+    background-color: red;
     width: 75%;
     padding: 15% 0;
     border-radius: 30px;
     text-align: center;
-
+    font-size: 140%;
+    color: white;
 }
 #answer2{
-    background-color: blueviolet;
+    background-color: blue;
     width: 75%;
     padding: 15% 0;
     border-radius: 30px;
     text-align: center;
+    font-size: 140%;
+    color: white;
 }
 #answer3{
-    background-color: chartreuse;
+    background-color: darkorange;
     width: 75%;
     padding: 15% 0;
     border-radius: 30px;
     text-align: center;
+    font-size: 140%;
+    color: white;
 }
 #answer4{
-    background-color: darkgoldenrod;
+    background-color: green;
     width: 75%;
     padding: 15% 0;
     border-radius: 30px;
     text-align: center;
+    font-size: 140%;
+    color: white;
 }
 .pointsCounter{
-    background-color: darkgoldenrod;
     width: 200%;
     padding: 30px 0;
     text-align: center;
 }
 .topBar{
-    background-color: fuchsia;
+    background-image: url(../images/wesley-tingey--Irs24DzLxM-unsplash.jpg);
     padding: 1% 0;
-    width: calc(100% - 10%);
+    width: calc(100% - 40%);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20%;
     margin: auto;
     padding-left: 10%;
+    font-size: 160%;
 }
 .questionNumber{
-    background-color: mediumvioletred;
     width: 200%;
     padding: 30px 0;
     text-align: center;
 }
 .timer{
-    background-color: darkgreen;
     width: 200%;
     padding: 30px 0;
     text-align: center;

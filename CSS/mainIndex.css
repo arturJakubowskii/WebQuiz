@@ -22,30 +22,30 @@ body{
 }
 #answer1{
     background-color: aqua;
-    width: 25em;
+    width: 75%;
+    padding: 15% 0;
     border-radius: 30px;
     text-align: center;
-    padding: 70px 0;
 
 }
 #answer2{
     background-color: blueviolet;
-    width: 25em;
+    width: 75%;
+    padding: 15% 0;
     border-radius: 30px;
     text-align: center;
-    padding: 70px 0;
 }
 #answer3{
     background-color: chartreuse;
-    width: 25em;
-    padding: 70px 0;
+    width: 75%;
+    padding: 15% 0;
     border-radius: 30px;
     text-align: center;
 }
 #answer4{
     background-color: darkgoldenrod;
-    width: 25em;
-    padding: 70px 0;
+    width: 75%;
+    padding: 15% 0;
     border-radius: 30px;
     text-align: center;
 }

@@ -3,6 +3,8 @@ let questionList = [];
 let trueAnswers = ["Germany", "Thanedd Incident", "Euro"];
 let buttonIdVariable = "";
 let userAnswer = "";
+// tests
+let testUserAnswer = false;
 let checkedAnswerVar = "";
 
 
@@ -27,23 +29,32 @@ function putAnswerToHTML(answerListIndex) {
     document.getElementById("answer4").innerText = answerList[answerListIndex][3];
 }
 
+
+
 function checkIfAnswerIsTrue(answer) {
-    return trueAnswers.includes(answer);
+    if( trueAnswers.includes(answer)){
+        testUserAnswer = true;
+        console.log(testUserAnswer);
+    }else{
+        testUserAnswer = false;
+        console.log(testUserAnswer);
+    }
 }
 
 function takeIdFromClickedButton(buttonId) {
     buttonIdVariable = buttonId;
+    takeHTMLContentFromClickedId();
+    if (buttonIdVariable !== undefined ) {
+        checkIfAnswerIsTrue(userAnswer);
+    }
 }
 
-// function checkAnswerFunc() {
-//     if (buttonIdVariable !== undefined ) {
-//         return checkIfAnswerIsTrue(userAnswer);
-//     }
-// }
 
 function takeHTMLContentFromClickedId() {
-    userAnswer = document.getElementById(buttonIdVariable).innerHTML;
+   userAnswer = document.getElementById(buttonIdVariable).innerHTML;
+   return userAnswer;
 }
+
 
 
 function mainGameStart() {
@@ -52,6 +63,14 @@ function mainGameStart() {
         case n = 0:
             putAnswerToHTML(0);
             putQuestionToHTML(0);
+
+                if (testUserAnswer === true){
+                    console.log("yes");
+                }else{
+                    console.log("no");
+                }
+
+
 
             break;
 
@@ -67,6 +86,8 @@ function mainGameStart() {
     }
 }
 
+
+
 mainGameStart();
-console.log(userAnswer);
+
 

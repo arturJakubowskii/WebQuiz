@@ -2,6 +2,7 @@ let answerList = [];
 let questionList = [];
 let trueAnswers = ["Germany", "Thanedd Incident", "Euro"];
 let buttonIdVariable;
+let testVar = "Euro";
 let userAnswer;
 
 
@@ -25,14 +26,13 @@ function putAnswerToHTML(answerListIndex) {
 }
 
 function checkIfAnswerIsTrue(answer) {
-    //return trueAnswers.includes(answer);
-    return trueAnswers[0].includes(answer);
+    return trueAnswers.includes(answer);
 }
 
 function takeIdFromClickedButton(buttonId) {
     buttonIdVariable = buttonId;
     takeHTMLContentFromClickedId();
-    checkIfAnswerIsTrue(buttonIdVariable);
+    // jezeli buttonVariable nie jest rowne undefained to wtedy checkIfAnswerIsTrue!!!!
 }
 
 function takeHTMLContentFromClickedId() {
@@ -68,3 +68,4 @@ function mainGameStart() {
 }
 
 mainGameStart();
+console.log(checkIfAnswerIsTrue(testVar));

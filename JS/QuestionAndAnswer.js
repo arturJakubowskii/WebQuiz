@@ -24,3 +24,25 @@ function putAnswerToHTML(answerListIndex) {
 function checkIfAnswerIsTrue(answer) {
     return trueAnswers.includes(answer);
 }
+
+function mainGameStart() {
+    let n = 0;
+    switch (n) {
+        case n = 0:
+            putAnswerToHTML(0);
+            putQuestionToHTML(0);
+            break;
+
+        case n = 1:
+            putAnswerToHTML(1);
+            putQuestionToHTML(1);
+            break;
+
+        case n = 2:
+            putAnswerToHTML(2);
+            putQuestionToHTML(2);
+            break;
+    }
+}
+
+mainGameStart();

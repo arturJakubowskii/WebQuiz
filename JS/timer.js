@@ -21,7 +21,6 @@ const COLOR_CODES = {
 };
 
 const TIME_LIMIT = 20;
-let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
 let remainingPathColor = COLOR_CODES.info.color;

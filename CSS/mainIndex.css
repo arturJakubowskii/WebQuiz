@@ -1,5 +1,5 @@
 body{
-    background-image: url(../images/89249.jpg);
+    background-image: url(../images/tlo1.jpg);
 }
 .questionContainer{
     background-color: dodgerblue;
@@ -63,7 +63,7 @@ body{
     text-align: center;
 }
 .topBar{
-    background-image: url(../images/wesley-tingey--Irs24DzLxM-unsplash.jpg);
+    background-image: url(../images/tlo2.jpg);
     padding: 1% 0;
     width: calc(100% - 40%);
     display: grid;

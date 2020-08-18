@@ -1,0 +1,22 @@
+#createdBy{
+text-align: center;
+    font-size: 450%;
+}
+.creators{
+    font-size: 450%;
+    text-align: center;
+    margin-top: 7%;
+}
+#back{
+    background-color: white;
+    width: 10%;
+    padding: 1%;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 140%;
+    color: black;
+    margin-left: 70%;
+}
+.creatorsContainer{
+
+}

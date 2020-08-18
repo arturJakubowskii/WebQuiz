@@ -1,5 +1,5 @@
-var score = 0;
-var answer = true;
+let score = 0;
+let answer = true;
 
 function addPoints() {
     if(answer === true){

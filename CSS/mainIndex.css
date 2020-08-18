@@ -80,3 +80,24 @@ body{
     padding: 20px 0;
     text-align: center;
 }
+.endingScreen{
+    background-color: dodgerblue;
+    width: 40%;
+    height: 25em;
+    text-align: center;
+    color: white;
+    margin: 15% auto 1%;
+}
+.innerEndingScreen{
+    padding: 15%;
+}
+#toHighscores{
+    background-color: white;
+    width: 10%;
+    padding: 1%;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 140%;
+    color: black;
+    margin-left: 60%;
+}

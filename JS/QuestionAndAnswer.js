@@ -55,6 +55,20 @@ function takeHTMLContentFromClickedId() {
    return userAnswer;
 }
 
+function waitForClick() {
+    if (testUserAnswer === true){
+        console.log("yes");
+    }else{
+        console.log("no");
+    }
+}
+
+function clickEventListenerFunc() {
+    document.getElementById("answer1").addEventListener("click",waitForClick);
+    document.getElementById("answer2").addEventListener("click",waitForClick);
+    document.getElementById("answer3").addEventListener("click",waitForClick);
+    document.getElementById("answer4").addEventListener("click",waitForClick);
+}
 
 
 function mainGameStart() {
@@ -63,14 +77,7 @@ function mainGameStart() {
         case n = 0:
             putAnswerToHTML(0);
             putQuestionToHTML(0);
-
-                if (testUserAnswer === true){
-                    console.log("yes");
-                }else{
-                    console.log("no");
-                }
-
-
+            clickEventListenerFunc();
 
             break;
 

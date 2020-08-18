@@ -3,9 +3,8 @@ let questionList = [];
 let trueAnswers = ["Germany", "Thanedd Incident", "Euro"];
 let buttonIdVariable = "";
 let userAnswer = "";
-// tests
 let testUserAnswer = false;
-let checkedAnswerVar = "";
+let changeQuestionCounter = 0;
 
 
 
@@ -58,8 +57,12 @@ function takeHTMLContentFromClickedId() {
 function waitForClick() {
     if (testUserAnswer === true){
         console.log("yes");
+        changeQuestionCounter += 1;
+
     }else{
         console.log("no");
+        changeQuestionCounter += 1;
+
     }
 }
 
@@ -72,23 +75,26 @@ function clickEventListenerFunc() {
 
 
 function mainGameStart() {
-    let n = 0;
-    switch (n) {
-        case n = 0:
+    switch (changeQuestionCounter) {
+        case changeQuestionCounter = 0:
+
             putAnswerToHTML(0);
             putQuestionToHTML(0);
             clickEventListenerFunc();
-
             break;
 
-        case n = 1:
+        case changeQuestionCounter = 1:
+
             putAnswerToHTML(1);
             putQuestionToHTML(1);
+            clickEventListenerFunc();
             break;
 
-        case n = 2:
+        case changeQuestionCounter = 2:
+
             putAnswerToHTML(2);
             putQuestionToHTML(2);
+            clickEventListenerFunc();
             break;
     }
 }

@@ -1,12 +1,14 @@
 // Credit: Mateusz Rybczonec
 
 const FULL_DASH_ARRAY = 283;
+const INFO_THRESHOLD = 20;
 const WARNING_THRESHOLD = 10;
 const ALERT_THRESHOLD = 5;
 
 const COLOR_CODES = {
     info: {
-        color: "green"
+        color: "green",
+        threshold: INFO_THRESHOLD
     },
     warning: {
         color: "orange",
@@ -53,10 +55,11 @@ startTimer();
 
 function onTimesUp() {
     clearInterval(timerInterval);
-    timePassed = 0;
 }
 
 function startTimer() {
+    const TIME_LIMIT = 20;
+    let timePassed = 0;
     timerInterval = setInterval(() => {
         timePassed = timePassed += 1;
         timeLeft = TIME_LIMIT - timePassed;
@@ -85,14 +88,22 @@ function formatTime(time) {
 
 function setRemainingPathColor(timeLeft) {
     const { alert, warning, info } = COLOR_CODES;
-    if (timeLeft <= alert.threshold) {
+    if (timeLeft <= info.threshold && timeLeft > warning.threshold){
+        document
+            .getElementById("base-timer-path-remaining")
+            .classList.remove(alert.color, warning.color);
+        document
+            .getElementById("base-timer-path-remaining")
+            .classList.add(info.color);
+    }
+    else if (timeLeft <= alert.threshold && timeLeft >= 0) {
         document
             .getElementById("base-timer-path-remaining")
             .classList.remove(warning.color);
         document
             .getElementById("base-timer-path-remaining")
             .classList.add(alert.color);
-    } else if (timeLeft <= warning.threshold) {
+    } else if (timeLeft <= warning.threshold && timeLeft > alert.threshold) {
         document
             .getElementById("base-timer-path-remaining")
             .classList.remove(info.color);

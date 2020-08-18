@@ -5,10 +5,8 @@ body{
     background-color: dodgerblue;
     width: 40%;
     height: 25em;
-    margin: auto;
     text-align: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin: 1% auto;
     color: white;
 }
 .question{
@@ -64,13 +62,12 @@ body{
 }
 .topBar{
     background-image: url(../images/tlo2.jpg);
-    padding: 1% 0;
     width: calc(100% - 40%);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20%;
     margin: auto;
-    padding-left: 10%;
+    padding: 1% 0 1% 10%;
     font-size: 160%;
 }
 .questionNumber{
@@ -80,6 +77,6 @@ body{
 }
 .timer{
     width: 200%;
-    padding: 30px 0;
+    padding: 20px 0;
     text-align: center;
 }

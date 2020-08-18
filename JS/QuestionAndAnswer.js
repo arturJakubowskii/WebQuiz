@@ -1,14 +1,16 @@
 let answerList = [];
 let questionList = [];
 let trueAnswers = ["Germany", "Thanedd Incident", "Euro"];
-let buttonIdVariable;
-let testVar = "Euro";
-let userAnswer;
+let buttonIdVariable = "";
+let userAnswer = "";
+let checkedAnswerVar = "";
+
 
 
 questionList[0] = ["Mercedes is company from:"];
 questionList[1] = ["Dijksta's leg is broken because of:"];
 questionList[2] = ["What's the currency in France?"];
+
 
 answerList[0] = ["USA", "France", "Japan", "Germany"];
 answerList[1] = ["Drunk Accident", "Thanedd Incident", "Roof Collapse", "Bad Step"];
@@ -31,13 +33,16 @@ function checkIfAnswerIsTrue(answer) {
 
 function takeIdFromClickedButton(buttonId) {
     buttonIdVariable = buttonId;
-    takeHTMLContentFromClickedId();
-    // jezeli buttonVariable nie jest rowne undefained to wtedy checkIfAnswerIsTrue!!!!
 }
+
+// function checkAnswerFunc() {
+//     if (buttonIdVariable !== undefined ) {
+//         return checkIfAnswerIsTrue(userAnswer);
+//     }
+// }
 
 function takeHTMLContentFromClickedId() {
     userAnswer = document.getElementById(buttonIdVariable).innerHTML;
-    console.log(userAnswer);
 }
 
 
@@ -47,11 +52,6 @@ function mainGameStart() {
         case n = 0:
             putAnswerToHTML(0);
             putQuestionToHTML(0);
-            //console.log(userAnswer);
-
-            if (checkIfAnswerIsTrue(answerList) === false){
-                console.log("false");
-            }
 
             break;
 
@@ -68,4 +68,5 @@ function mainGameStart() {
 }
 
 mainGameStart();
-console.log(checkIfAnswerIsTrue(testVar));
+console.log(userAnswer);
+

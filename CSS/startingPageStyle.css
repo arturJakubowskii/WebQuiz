@@ -1,0 +1,45 @@
+.logoContainer{
+    text-align: center;
+}
+#logo{
+    width: 30%;
+    height: 30%;
+}
+#title{
+
+}
+.menuContainer{
+    width: calc(100% - 50%);
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5%;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+#startGame{
+    background-color: red;
+    width: 35%;
+    padding: 5%;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 140%;
+    color: white;
+}
+#creatorsList{
+    background-color: red;
+    width: 35%;
+    padding: 5%;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 140%;
+    color: white;
+}
+#highScores{
+    background-color: red;
+    width: 35%;
+    padding: 5%;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 140%;
+    color: white;
+}

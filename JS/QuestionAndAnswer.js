@@ -1,6 +1,9 @@
 let answerList = [];
 let questionList = [];
 let trueAnswers = ["Germany", "Thanedd Incident", "Euro"];
+let buttonIdVariable;
+let userAnswer;
+
 
 questionList[0] = ["Mercedes is company from:"];
 questionList[1] = ["Dijksta's leg is broken because of:"];
@@ -22,11 +25,19 @@ function putAnswerToHTML(answerListIndex) {
 }
 
 function checkIfAnswerIsTrue(answer) {
-    return trueAnswers.includes(answer);
+    //return trueAnswers.includes(answer);
+    return trueAnswers[0].includes(answer);
 }
 
 function takeIdFromClickedButton(buttonId) {
-    return buttonId;
+    buttonIdVariable = buttonId;
+    takeHTMLContentFromClickedId();
+    checkIfAnswerIsTrue(buttonIdVariable);
+}
+
+function takeHTMLContentFromClickedId() {
+    userAnswer = document.getElementById(buttonIdVariable).innerHTML;
+    console.log(userAnswer);
 }
 
 
@@ -36,6 +47,12 @@ function mainGameStart() {
         case n = 0:
             putAnswerToHTML(0);
             putQuestionToHTML(0);
+            //console.log(userAnswer);
+
+            if (checkIfAnswerIsTrue(answerList) === false){
+                console.log("false");
+            }
+
             break;
 
         case n = 1:

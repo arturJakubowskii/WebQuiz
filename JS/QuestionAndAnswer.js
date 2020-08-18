@@ -25,6 +25,11 @@ function checkIfAnswerIsTrue(answer) {
     return trueAnswers.includes(answer);
 }
 
+function takeIdFromClickedButton(buttonId) {
+    return buttonId;
+}
+
+
 function mainGameStart() {
     let n = 0;
     switch (n) {

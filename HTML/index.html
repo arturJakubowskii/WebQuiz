@@ -3,20 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Game</title>
     <link rel="stylesheet" type="text/css" href="../CSS/mainIndex.css">
     <link rel="stylesheet" type="text/css" href="../CSS/timerCSS.css">
     <script src="../JS/timer.js" defer></script>
+
     <script src="../JS/QuestionAndAnswer.js" defer></script>
+    <script src="../JS/pointsCounter.js"></script>
+    <script src="../JS/QuestionCounter.js"></script>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <div class="topBar">
         <div class="pointsCounter">
-            Your Points:
+            <p id="points">Your Points: 0</p>
         </div>
         <div class="questionNumber">
-            Question Number:
+            <p id="questionNumber">Question Number: 1</p>
         </div>
         <div id="app"></div>
     </div>
@@ -29,19 +34,12 @@
     </div>
 
     <div class="answersContainer">
-        <button id="answer1" onclick="takeIdFromClickedButton(this.id)">
-            answer1
-        </button>
-        <button id="answer2" onclick="takeIdFromClickedButton(this.id)">
-            answer2
-        </button>
-        <button id="answer3" onclick="takeIdFromClickedButton(this.id)">
-            answer3
-        </button>
-        <button id="answer4" onclick="takeIdFromClickedButton(this.id)">
-            answer4
-        </button>
+        <button id="answer1" onclick="addPoints();nextQuestion();takeIdFromClickedButton(this.id);">answer1</button>
+        <button id="answer2" onclick="addPoints();nextQuestion();takeIdFromClickedButton(this.id);">answer2</button>
+        <button id="answer3" onclick="addPoints();nextQuestion();takeIdFromClickedButton(this.id);">answer3</button>
+        <button id="answer4" onclick="addPoints();nextQuestion();takeIdFromClickedButton(this.id);">answer4</button>
     </div>
+
 
 </body>
 

@@ -3,9 +3,9 @@ text-align: center;
     font-size: 450%;
 }
 .creators{
-    font-size: 450%;
+    font-size: 250%;
     text-align: center;
-    margin-top: 7%;
+    margin-top: 15%;
 }
 #back{
     background-color: white;
@@ -18,5 +18,10 @@ text-align: center;
     margin-left: 70%;
 }
 .creatorsContainer{
-
+    background-color: dodgerblue;
+    width: 40%;
+    height: 25em;
+    text-align: center;
+    margin: 1% auto;
+    color: white;
 }

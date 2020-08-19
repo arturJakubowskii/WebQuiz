@@ -3,12 +3,14 @@ body {
     display: grid;
     height: 100vh;
     place-items: center;
+
 }
 
 .base-timer {
     position: relative;
     width: 100px;
     height: 100px;
+
 }
 
 .base-timer__svg {

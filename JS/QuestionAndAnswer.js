@@ -4,7 +4,6 @@ let trueAnswers = ["Germany", "Thanedd Incident", "Euro"];
 let buttonIdVariable = "";
 let userAnswer = "";
 let testUserAnswer = false;
-let changeQuestionCounter = 0;
 
 
 
@@ -54,47 +53,27 @@ function takeHTMLContentFromClickedId() {
    return userAnswer;
 }
 
-function waitForClick() {
-    if (testUserAnswer === true){
-        console.log("yes");
-        changeQuestionCounter += 1;
 
-    }else{
-        console.log("no");
-        changeQuestionCounter += 1;
-
-    }
+function runMainFunctions(index) {
+    putAnswerToHTML(index);
+    putQuestionToHTML(index);
 }
-
-function clickEventListenerFunc() {
-    document.getElementById("answer1").addEventListener("click",waitForClick);
-    document.getElementById("answer2").addEventListener("click",waitForClick);
-    document.getElementById("answer3").addEventListener("click",waitForClick);
-    document.getElementById("answer4").addEventListener("click",waitForClick);
-}
-
-function runMainFunctions() {
-    putAnswerToHTML(0);
-    putQuestionToHTML(0);
-    clickEventListenerFunc();
-}
-
 
 function mainGameStart() {
-    switch (changeQuestionCounter) {
-        case changeQuestionCounter = 0:
+    switch (questionNumber) {
+        case questionNumber = 1:
 
-            runMainFunctions();
+            runMainFunctions(0);
             break;
 
-        case changeQuestionCounter = 1:
+        case questionNumber = 2:
 
-            runMainFunctions();
+            runMainFunctions(1);
             break;
 
-        case changeQuestionCounter = 2:
+        case questionNumber = 3:
 
-            runMainFunctions();
+            runMainFunctions(2);
             break;
     }
 }

@@ -12,3 +12,10 @@ function saveToHighscores (){
     highscoreArr.push("Name: " + takeUserName()+ " Score: " + finishingScore());
     console.log(highscoreArr);
 }
+
+function endStatistics (){
+    document.getElementById("congratulation").innerHTML = "Congratulation, You Finished The Game";
+    document.getElementById("userName").innerHTML = "Your username: " + takeUserName();
+    document.getElementById("userScore").innerHTML = "Your Final Score: " + finishingScore();
+}
+endStatistics();

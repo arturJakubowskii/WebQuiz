@@ -1,4 +1,4 @@
-let questionNumber = 1
+let questionNumber = 1;
 
 function nextQuestion() {
     questionNumber ++;

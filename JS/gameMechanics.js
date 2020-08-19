@@ -5,8 +5,7 @@ function takeUserName () {
     return username;
 }
 function finishingScore () {
-    score = 10;
-    return score;
+    return totalScore;
 }
 function saveToHighscores (){
     highscoreArr.push("Name: " + takeUserName()+ " Score: " + finishingScore());
@@ -18,4 +17,6 @@ function endStatistics (){
     document.getElementById("userName").innerHTML = "Your username: " + takeUserName();
     document.getElementById("userScore").innerHTML = "Your Final Score: " + finishingScore();
 }
+
+
 endStatistics();

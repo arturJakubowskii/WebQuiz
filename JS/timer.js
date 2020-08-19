@@ -25,6 +25,7 @@ const TIME_LIMIT = 20;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
 let remainingPathColor = COLOR_CODES.info.color;
+let timePassed;
 
 document.getElementById("app").innerHTML = `
 <div class="base-timer">
@@ -59,7 +60,7 @@ function onTimesUp() {
 
 function startTimer() {
     const TIME_LIMIT = 20;
-    let timePassed = 0;
+    timePassed = 0;
     timerInterval = setInterval(() => {
         timePassed = timePassed += 1;
         timeLeft = TIME_LIMIT - timePassed;
@@ -70,7 +71,14 @@ function startTimer() {
         setRemainingPathColor(timeLeft);
 
         if (timeLeft === 0) {
+            alert("TIMES UP");
+            nextQuestion();
+            mainGameStart();
             onTimesUp();
+            if (questionNumber >= trueAnswers.length){
+                document.location.href = 'endPage.html';
+            }
+            startTimer();
         }
     }, 1000);
 }

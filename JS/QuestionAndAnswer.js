@@ -1,6 +1,6 @@
 let answerList = [];
 let questionList = [];
-let trueAnswers = ["Germany", "Thanedd Incident", "Euro"];
+let trueAnswers = ["Germany", "Thanedd Incident", "Euro","FC Liverpool","RPG"];
 let buttonIdVariable = "";
 let userAnswer = "";
 let testUserAnswer = false;
@@ -10,11 +10,16 @@ let testUserAnswer = false;
 questionList[0] = ["Mercedes is company from:"];
 questionList[1] = ["Dijksta's leg is broken because of:"];
 questionList[2] = ["What's the currency in France?"];
+questionList[3] = ["Which Team Won The Champions League In Year 2018/2019?"];
+questionList[4] = ["What Type Of Game Gothic Is?"];
+
 
 
 answerList[0] = ["USA", "France", "Japan", "Germany"];
 answerList[1] = ["Drunk Accident", "Thanedd Incident", "Roof Collapse", "Bad Step"];
 answerList[2] = ["Euro", "Dollar", "Mark", "Rubel"];
+answerList[3] = ["FC Liverpool", "Tottenham Hotspoor", "Intermediolan", "Paris Saint Germain"];
+answerList[4] = ["Shooter","RPG","Horror Game", "RTS"];
 
 function putQuestionToHTML(questionListIndex) {
     document.getElementById("question").innerText = questionList[questionListIndex];
@@ -74,6 +79,14 @@ function mainGameStart() {
         case questionNumber = 3:
 
             runMainFunctions(2);
+            break;
+        case questionNumber = 4:
+
+            runMainFunctions(3);
+            break;
+        case questionNumber = 5:
+
+            runMainFunctions(4);
             break;
     }
 }

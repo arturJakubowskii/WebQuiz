@@ -61,7 +61,7 @@ body{
     text-align: center;
 }
 .topBar{
-    background-image: url(../images/tlo2.jpg);
+    background-color: darkgrey;
     width: calc(100% - 40%);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -104,4 +104,7 @@ body{
 #question{
     text-align: center;
     margin-top: 25%;
+}
+#app{
+    padding-top: 20%;
 }

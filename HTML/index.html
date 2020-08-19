@@ -34,10 +34,10 @@
     </div>
 
     <div class="answersContainer">
-        <button id="answer1" onclick="addPoints();nextQuestion();takeIdFromClickedButton(this.id);">answer1</button>
-        <button id="answer2" onclick="addPoints();nextQuestion();takeIdFromClickedButton(this.id);">answer2</button>
-        <button id="answer3" onclick="addPoints();nextQuestion();takeIdFromClickedButton(this.id);">answer3</button>
-        <button id="answer4" onclick="addPoints();nextQuestion();takeIdFromClickedButton(this.id);">answer4</button>
+        <button id="answer1" onclick="takeIdFromClickedButton(this.id);addPoints();nextQuestion();">answer1</button>
+        <button id="answer2" onclick="takeIdFromClickedButton(this.id);addPoints();nextQuestion();">answer2</button>
+        <button id="answer3" onclick="takeIdFromClickedButton(this.id);addPoints();nextQuestion();">answer3</button>
+        <button id="answer4" onclick="takeIdFromClickedButton(this.id);addPoints();nextQuestion();">answer4</button>
     </div>
 
 

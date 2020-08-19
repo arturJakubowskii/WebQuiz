@@ -1,8 +1,7 @@
 let score = 0;
-let answer = true;
 
 function addPoints() {
-    if(answer === true){
+    if(testUserAnswer === true){
         score ++;
         console.log(score);
         document.getElementById("points").innerHTML = "Your points: " + score;

@@ -101,3 +101,7 @@ body{
     color: black;
     margin-left: 60%;
 }
+#question{
+    text-align: center;
+    margin-top: 25%;
+}

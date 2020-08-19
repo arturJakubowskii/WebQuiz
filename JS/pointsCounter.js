@@ -6,11 +6,9 @@ function addPoints() {
     if(testUserAnswer === true && timePassed > 0){
         questionScore = score / timePassed;
         totalScore += Math.floor(questionScore);
-        console.log(questionScore);
-        console.log(totalScore);
         document.getElementById("points").innerHTML = "Your Points: " + totalScore;
         onTimesUp();
-        alert("wygrałeś talon");
+        alert("Correct!");
         if (questionNumber >= trueAnswers.length){
             document.location.href = 'endPage.html';
         }
@@ -20,11 +18,9 @@ function addPoints() {
         timePassed = 1;
         questionScore = score / timePassed;
         totalScore += Math.floor(questionScore);
-        console.log(questionScore);
-        console.log(totalScore);
         document.getElementById("points").innerHTML = "Your Points: " + totalScore;
         onTimesUp();
-        alert("wygrałeś talon");
+        alert("Correct!");
         if (questionNumber >= trueAnswers.length){
             document.location.href = 'endPage.html';
         }
@@ -32,7 +28,7 @@ function addPoints() {
     }
     else if (testUserAnswer === false){
         onTimesUp();
-        alert("nie wygrałeś");
+        alert("Wrong Answer!");
         if (questionNumber >= trueAnswers.length){
             document.location.href = 'endPage.html';
         }

@@ -71,7 +71,7 @@ function startTimer() {
         setRemainingPathColor(timeLeft);
 
         if (timeLeft === 0) {
-            alert("TIMES UP");
+            alert("Times Up!");
             nextQuestion();
             mainGameStart();
             onTimesUp();

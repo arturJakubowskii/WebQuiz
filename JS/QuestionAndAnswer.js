@@ -73,28 +73,28 @@ function clickEventListenerFunc() {
     document.getElementById("answer4").addEventListener("click",waitForClick);
 }
 
+function runMainFunctions() {
+    putAnswerToHTML(0);
+    putQuestionToHTML(0);
+    clickEventListenerFunc();
+}
+
 
 function mainGameStart() {
     switch (changeQuestionCounter) {
         case changeQuestionCounter = 0:
 
-            putAnswerToHTML(0);
-            putQuestionToHTML(0);
-            clickEventListenerFunc();
+            runMainFunctions();
             break;
 
         case changeQuestionCounter = 1:
 
-            putAnswerToHTML(1);
-            putQuestionToHTML(1);
-            clickEventListenerFunc();
+            runMainFunctions();
             break;
 
         case changeQuestionCounter = 2:
 
-            putAnswerToHTML(2);
-            putQuestionToHTML(2);
-            clickEventListenerFunc();
+            runMainFunctions();
             break;
     }
 }

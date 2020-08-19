@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../CSS/mainIndex.css">
     <link rel="stylesheet" type="text/css" href="../CSS/timerCSS.css">
     <script src="../JS/timer.js" defer></script>
+
+    <script src="../JS/QuestionAndAnswer.js" defer></script>
     <script src="../JS/pointsCounter.js"></script>
     <script src="../JS/QuestionCounter.js"></script>
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
@@ -26,16 +28,16 @@
 
 
     <div class="questionContainer">
-        <h2 class="question">
+        <h2 id="question">
             Pytanie
         </h2>
     </div>
 
     <div class="answersContainer">
-        <button id="answer1" onclick="addPoints();nextQuestion();">answer1</button>
-        <button id="answer2" onclick="addPoints();nextQuestion();">answer2</button>
-        <button id="answer3" onclick="addPoints();nextQuestion();">answer3</button>
-        <button id="answer4" onclick="addPoints();nextQuestion();">answer4</button>
+        <button id="answer1" onclick="addPoints();nextQuestion();takeIdFromClickedButton(this.id);">answer1</button>
+        <button id="answer2" onclick="addPoints();nextQuestion();takeIdFromClickedButton(this.id);">answer2</button>
+        <button id="answer3" onclick="addPoints();nextQuestion();takeIdFromClickedButton(this.id);">answer3</button>
+        <button id="answer4" onclick="addPoints();nextQuestion();takeIdFromClickedButton(this.id);">answer4</button>
     </div>
 
 

@@ -10,6 +10,7 @@ function addPoints() {
         onTimesUp();
         alert("Correct!");
         if (questionNumber >= trueAnswers.length){
+            localStorage.setItem("storageName",totalScore);
             document.location.href = 'endPage.html';
         }
         startTimer();
@@ -22,6 +23,7 @@ function addPoints() {
         onTimesUp();
         alert("Correct!");
         if (questionNumber >= trueAnswers.length){
+            localStorage.setItem("storageName",totalScore);
             document.location.href = 'endPage.html';
         }
         startTimer();
@@ -30,6 +32,7 @@ function addPoints() {
         onTimesUp();
         alert("Wrong Answer!");
         if (questionNumber >= trueAnswers.length){
+            localStorage.setItem("storageName",totalScore);
             document.location.href = 'endPage.html';
         }
         startTimer();

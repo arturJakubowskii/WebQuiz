@@ -10,6 +10,7 @@ function saveToHighscores (){
 }
 
 function endStatistics (){
+    totalScore = localStorage.getItem("storageName");
     document.getElementById("congratulation").innerHTML = "Congratulation, You Finished The Game";
     document.getElementById("userName").innerHTML = "Your username: " + takeUserName();
     document.getElementById("userScore").innerHTML = "Your Final Score: " + totalScore;

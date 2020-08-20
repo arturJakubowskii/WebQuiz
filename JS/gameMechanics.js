@@ -26,8 +26,10 @@ function endStatistics (){
 }
 
 function printHighscores(){
-    for(i = 0; i<= highscoreNameArr.length; i++) {
-        document.getElementById("username").innerText = highscoreNameArr[i];
-        document.getElementById("scores").innerText = highscorePointsArr[i];
-    }
+    // for(let i = 0; i<= highscoreNameArr.length; i++) {
+        document.getElementById("username").innerText = highscoreNameArr[0];
+        document.getElementById("scores").innerText = highscorePointsArr[0];
+    // }
 }
+saveToHighscores();
+printHighscores();

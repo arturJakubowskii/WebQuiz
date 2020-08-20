@@ -7,11 +7,11 @@ let testUserAnswer = false;
 
 
 
-questionList[0] = ["Mercedes is company from:"];
-questionList[1] = ["Dijksta's leg is broken because of:"];
-questionList[2] = ["What's the currency in France?"];
-questionList[3] = ["Which Team Won The Champions League In Year 2018/2019?"];
-questionList[4] = ["What Type Of Game Gothic Is?"];
+questionList[0] = "Mercedes is company from:";
+questionList[1] = "Dijksta's leg is broken because of:";
+questionList[2] = "What's the currency in France?";
+questionList[3] = "Which Team Won The Champions League In Year 2018/2019?";
+questionList[4] = "What Type Of Game Gothic Is?";
 
 
 

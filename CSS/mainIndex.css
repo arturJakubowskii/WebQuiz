@@ -1,16 +1,13 @@
 body{
-    background-image: url(../images/tlo1.jpg);
+    background-color: var(--customYellow);
 }
 .questionContainer{
-    background-color: dodgerblue;
+    background-color: var(--customLightBlue);
     width: 40%;
     height: 25em;
     text-align: center;
     margin: 1% auto;
-    color: white;
-}
-.question{
-
+    color: var(--customAlabaster);
 }
 .answersContainer{
     width: calc(100% - 25%);
@@ -20,40 +17,40 @@ body{
     margin: auto;
 }
 #answer1{
-    background-color: red;
+    background-color: var(--customGreen);
     width: 75%;
     padding: 15% 0;
     border-radius: 30px;
     text-align: center;
     font-size: 140%;
-    color: white;
+    color: var(--customAlabaster);
 }
 #answer2{
-    background-color: blue;
+    background-color:  var(--customDarkPurple);
     width: 75%;
     padding: 15% 0;
     border-radius: 30px;
     text-align: center;
     font-size: 140%;
-    color: white;
+    color: var(--customAlabaster);
 }
 #answer3{
-    background-color: darkorange;
+    background-color: var(--customRed);
     width: 75%;
     padding: 15% 0;
     border-radius: 30px;
     text-align: center;
     font-size: 140%;
-    color: white;
+    color: var(--customAlabaster);
 }
 #answer4{
-    background-color: green;
+    background-color: var(--customBrown);
     width: 75%;
     padding: 15% 0;
     border-radius: 30px;
     text-align: center;
     font-size: 140%;
-    color: white;
+    color: var(--customAlabaster);
 }
 .pointsCounter{
     width: 200%;
@@ -61,7 +58,7 @@ body{
     text-align: center;
 }
 .topBar{
-    background-color: darkgrey;
+    background-color: var(--customViolet);
     width: calc(100% - 40%);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -81,25 +78,26 @@ body{
     text-align: center;
 }
 .endingScreen{
-    background-color: dodgerblue;
+    background-color: var(--customLightBlue);
     width: 40%;
-    height: 25em;
+    height: 80%;
     text-align: center;
-    color: white;
-    margin: 15% auto 1%;
+    color: var(--customAlabaster);
+    margin: 0.5% auto 1%;
 }
 .innerEndingScreen{
-    padding: 15%;
+    padding: 5%;
 }
 #toHighscores{
-    background-color: white;
+    background-color: var(--customRed);
     width: 10%;
     padding: 1%;
     border-radius: 30px;
     text-align: center;
     font-size: 140%;
-    color: black;
-    margin-left: 60%;
+    color: var(--customAlabaster);
+    margin-left: 30%;
+    margin-top: 0.5%;
 }
 #question{
     text-align: center;
@@ -107,4 +105,30 @@ body{
 }
 #app{
     padding-top: 20%;
+}
+#username{
+    font-size: 150%;
+}
+#toMainMenu{
+    background-color: var(--customRed);
+    width: 10%;
+    padding: 1%;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 140%;
+    color: var(--customAlabaster);
+    margin-left: 62%;
+}
+.highScoreScreen{
+    background-color: var(--customLightBlue);
+    width: 40%;
+    height: 820%;
+    text-align: center;
+    color: var(--customAlabaster);
+    padding: 2%;
+    margin: 5% auto 1%;
+}
+.innerHighScoreScreen{
+    padding: 5%;
+    margin-bottom: 30%;
 }

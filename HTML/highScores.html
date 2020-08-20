@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../CSS/startingPageStyle.css">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <script src="../JS/gameMechanics.js" defer></script>
 </head>
 <body>
 <div class="logoContainer">
@@ -14,7 +15,8 @@
 </div>
 <div class="endingScreen">
     <div class="innerEndingScreen">
-        <p>Top 10 results</p>
+        <p onload="printHighscores()">Top 10 results</p>
+
     </div>
 </div>
 <button id="toHighscores" onclick="window.location.href='startingPage.html';">Go to main Page</button>

@@ -1,12 +1,20 @@
-let highscoreArr = [];
+var highscoreNameArr = [];
+var highscorePointsArr = [];
+
 
 function takeUserName () {
     let username = prompt("What is your name?");
+    localStorage.setItem("storageName2",username);
     return username;
 }
 
 function saveToHighscores (){
-    highscoreArr.push("Name: " + takeUserName()+ " Score: " + totalScore);
+    var totalScore = localStorage.getItem("storageName");
+    var username = localStorage.getItem("storageName2");
+    highscoreNameArr.push(username);
+    highscorePointsArr.push(totalScore);
+    console.log(highscorePointsArr[0]);
+    console.log(highscoreNameArr[0]);
 }
 
 function endStatistics (){
@@ -17,5 +25,9 @@ function endStatistics (){
     console.log(totalScore);
 }
 
-
-endStatistics();
+function printHighscores(){
+    for(i = 0; i<= highscoreNameArr.length; i++) {
+        document.getElementById("username").innerText = highscoreNameArr[i];
+        document.getElementById("scores").innerText = highscorePointsArr[i];
+    }
+}

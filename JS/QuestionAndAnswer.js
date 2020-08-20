@@ -45,13 +45,7 @@ function putAnswerToHTML(answerListIndex) {
 
 
 function checkIfAnswerIsTrue(answer) {
-    if( trueAnswers.includes(answer)){
-        testUserAnswer = true;
-        console.log(testUserAnswer);
-    }else{
-        testUserAnswer = false;
-        console.log(testUserAnswer);
-    }
+    testUserAnswer = trueAnswers.includes(answer);
 }
 
 function takeIdFromClickedButton(buttonId) {

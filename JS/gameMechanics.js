@@ -13,8 +13,6 @@ function saveToHighscores (){
     let username = localStorage.getItem("storageName2");
     highscoreNameArr.push(username);
     highscorePointsArr.push(totalScore);
-    console.log(highscorePointsArr[0]);
-    console.log(highscoreNameArr[0]);
 }
 
 function endStatistics (){
@@ -22,7 +20,6 @@ function endStatistics (){
     document.getElementById("congratulation").innerHTML = "Congratulation, You Finished The Game";
     document.getElementById("userName").innerHTML = "Your username: " + takeUserName();
     document.getElementById("userScore").innerHTML = "Your Final Score: " + totalScore;
-    console.log(totalScore);
 }
 
 function printHighscores(){

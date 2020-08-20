@@ -72,14 +72,19 @@ function startTimer() {
         setRemainingPathColor(timeLeft);
 
         if (timeLeft === 0) {
-            alert("Times Up!");
+            Swal.fire(
+                'Time Is Up!',
+                'Try To Answer Quicker!',
+                'error',
+            ).then((value => {
+                startTimer()
+            }))
             nextQuestion();
             mainGameStart();
             onTimesUp();
             if (questionNumber >= trueAnswers.length){
                 document.location.href = 'endPage.html';
             }
-            startTimer();
         }
     }, 1000);
     return timePassed;

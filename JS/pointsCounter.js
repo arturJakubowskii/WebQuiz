@@ -3,6 +3,7 @@ let totalScore = 0;
 let questionScore;
 
 function addPoints() {
+    let goNext = false;
     if(testUserAnswer === true && timePassed > 0){
         counter();
     }
@@ -14,14 +15,15 @@ function addPoints() {
         Swal.fire(
             'Wrong Choice!',
             'No Points Earned!',
-            'error'
-        )
+            'error',
+        ).then((value => {
+            startTimer()
+        }))
         onTimesUp();
         if (questionNumber >= trueAnswers.length){
             localStorage.setItem("storageName",totalScore);
             document.location.href = 'endPage.html';
         }
-        startTimer()
     }
 }
 
@@ -32,12 +34,13 @@ function counter(){
     Swal.fire(
         'Good job!',
         'You Guessed Correctly!',
-        'success'
-    )
+        'success',
+    ).then((value => {
+        startTimer()
+    }))
     onTimesUp();
     if (questionNumber >= trueAnswers.length){
         localStorage.setItem("storageName",totalScore);
         document.location.href = 'endPage.html';
     }
-    startTimer();
 }

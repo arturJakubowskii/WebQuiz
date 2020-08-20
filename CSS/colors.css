@@ -9,4 +9,9 @@
     --customDarkPurple: #540d6e;
     --customAlabaster: #ebebd3;
     --customLightBlue: #1e90ff;
+    --buttonGradientRed: linear-gradient(130deg, rgba(205,91,132,1) 0%, rgba(80,52,55,1) 100%);
+    --buttonGradientOrange: linear-gradient(130deg, rgba(145,111,6,1) 29%, rgba(242,158,84,1) 100%);
+    --buttonGradientPurple: linear-gradient(130deg, rgba(108,67,145,1) 29%, rgba(131,57,204,1) 100%);
+    --buttonGradientGreen: linear-gradient(130deg, rgba(80,130,58,1) 35%, rgba(61,179,102,1) 100%);
+    --buttonGradientBlue: linear-gradient(130deg, rgba(10,106,203,1) 33%, rgba(17,63,108,1) 100%);
 }

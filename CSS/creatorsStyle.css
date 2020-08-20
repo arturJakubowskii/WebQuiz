@@ -1,5 +1,6 @@
 #createdBy{
-text-align: center;
+    color: var(--customViolet);
+    text-align: center;
     font-size: 450%;
 }
 .creators{
@@ -8,20 +9,20 @@ text-align: center;
     margin-top: 15%;
 }
 #back{
-    background-color: white;
+    background-color: var(--customRed);
     width: 10%;
     padding: 1%;
     border-radius: 30px;
     text-align: center;
     font-size: 140%;
-    color: black;
+    color: var(--customAlabaster);
     margin-left: 70%;
 }
 .creatorsContainer{
-    background-color: dodgerblue;
+    background-color: var(--customViolet);
     width: 40%;
     height: 25em;
     text-align: center;
     margin: 1% auto;
-    color: white;
+    color: var(--customAlabaster);
 }

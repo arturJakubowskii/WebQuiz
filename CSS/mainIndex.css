@@ -2,7 +2,7 @@ body{
     background-color: var(--customYellow);
 }
 .questionContainer{
-    background-color: var(--customViolet);
+    background-color: var(--customLightBlue);
     width: 40%;
     height: 25em;
     text-align: center;
@@ -17,24 +17,6 @@ body{
     margin: auto;
 }
 #answer1{
-    background-color: var(--customBlue);
-    width: 75%;
-    padding: 15% 0;
-    border-radius: 30px;
-    text-align: center;
-    font-size: 140%;
-    color: var(--customAlabaster);
-}
-#answer2{
-    background-color:  var(--customRed);
-    width: 75%;
-    padding: 15% 0;
-    border-radius: 30px;
-    text-align: center;
-    font-size: 140%;
-    color: var(--customAlabaster);
-}
-#answer3{
     background-color: var(--customGreen);
     width: 75%;
     padding: 15% 0;
@@ -43,8 +25,26 @@ body{
     font-size: 140%;
     color: var(--customAlabaster);
 }
+#answer2{
+    background-color:  var(--customDarkPurple);
+    width: 75%;
+    padding: 15% 0;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 140%;
+    color: var(--customAlabaster);
+}
+#answer3{
+    background-color: var(--customRed);
+    width: 75%;
+    padding: 15% 0;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 140%;
+    color: var(--customAlabaster);
+}
 #answer4{
-    background-color: var(--donaldTrump);
+    background-color: var(--customBrown);
     width: 75%;
     padding: 15% 0;
     border-radius: 30px;
@@ -58,7 +58,7 @@ body{
     text-align: center;
 }
 .topBar{
-    background-color: var(--customLaguna);
+    background-color: var(--customViolet);
     width: calc(100% - 40%);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -78,7 +78,7 @@ body{
     text-align: center;
 }
 .endingScreen{
-    background-color: var(--customViolet);
+    background-color: var(--customLightBlue);
     width: 40%;
     height: 80%;
     text-align: center;
@@ -110,21 +110,21 @@ body{
     font-size: 150%;
 }
 #toMainMenu{
-    background-color: white;
+    background-color: var(--customRed);
     width: 10%;
     padding: 1%;
     border-radius: 30px;
     text-align: center;
     font-size: 140%;
-    color: black;
+    color: var(--customAlabaster);
     margin-left: 60%;
 }
 .highScoreScreen{
-    background-color: dodgerblue;
+    background-color: var(--customLightBlue);
     width: 40%;
     height: 820%;
     text-align: center;
-    color: white;
+    color: var(--customAlabaster);
     padding: 2%;
     margin: 5% auto 1%;
 }

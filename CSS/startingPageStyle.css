@@ -5,8 +5,13 @@
     width: 30%;
     height: 30%;
 }
-#title{
-
+.logoContainer2{
+    text-align: center;
+    margin-right: 5%;
+}
+#logo2{
+    width: 130%;
+    height: 130%;
 }
 .menuContainer{
     width: calc(100% - 50%);

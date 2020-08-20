@@ -4,29 +4,11 @@ let questionScore;
 
 function addPoints() {
     if(testUserAnswer === true && timePassed > 0){
-        questionScore = score / timePassed;
-        totalScore += Math.floor(questionScore);
-        document.getElementById("points").innerHTML = "Your Points: " + totalScore;
-        onTimesUp();
-        alert("Correct!");
-        if (questionNumber >= trueAnswers.length){
-            localStorage.setItem("storageName",totalScore);
-            document.location.href = 'endPage.html';
-        }
-        startTimer();
+        counter();
     }
     else if (testUserAnswer === true && timePassed === 0){
         timePassed = 1;
-        questionScore = score / timePassed;
-        totalScore += Math.floor(questionScore);
-        document.getElementById("points").innerHTML = "Your Points: " + totalScore;
-        onTimesUp();
-        alert("Correct!");
-        if (questionNumber >= trueAnswers.length){
-            localStorage.setItem("storageName",totalScore);
-            document.location.href = 'endPage.html';
-        }
-        startTimer();
+        counter();
     }
     else if (testUserAnswer === false){
         onTimesUp();
@@ -37,4 +19,17 @@ function addPoints() {
         }
         startTimer();
     }
+}
+
+function counter(){
+    questionScore = score / timePassed;
+    totalScore += Math.floor(questionScore);
+    document.getElementById("points").innerHTML = "Your Points: " + totalScore;
+    onTimesUp();
+    alert("Correct!");
+    if (questionNumber >= trueAnswers.length){
+        localStorage.setItem("storageName",totalScore);
+        document.location.href = 'endPage.html';
+    }
+    startTimer();
 }

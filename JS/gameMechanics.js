@@ -26,9 +26,7 @@ function endStatistics (){
 }
 
 function printHighscores(){
-    // for(let i = 0; i<= highscoreNameArr.length; i++) {
         document.getElementById("username").innerText = "1. " + "Username: " + highscoreNameArr[0] + "      Score: " + highscorePointsArr[0];
-    // }
 }
 
 saveToHighscores();

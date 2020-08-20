@@ -17,25 +17,31 @@ body{
     margin: auto;
 }
 #answer1{
-    background-color: var(--customGreen);
+    background: var(--customGreen);
     width: 75%;
     padding: 15% 0;
     border-radius: 30px;
     text-align: center;
     font-size: 140%;
     color: var(--customAlabaster);
+}
+#answer1:hover{
+    background: var(--buttonGradientGreen);
 }
 #answer2{
-    background-color:  var(--customDarkPurple);
+    background:  var(--customDarkPurple);
     width: 75%;
     padding: 15% 0;
     border-radius: 30px;
     text-align: center;
     font-size: 140%;
     color: var(--customAlabaster);
+}
+#answer2:hover{
+    background: var(--buttonGradientPurple);
 }
 #answer3{
-    background-color: var(--customRed);
+    background: var(--customRed);
     width: 75%;
     padding: 15% 0;
     border-radius: 30px;
@@ -43,14 +49,20 @@ body{
     font-size: 140%;
     color: var(--customAlabaster);
 }
+#answer3:hover{
+    background: var(--buttonGradientRed);
+}
 #answer4{
-    background-color: var(--customBrown);
+    background: var(--customBrown);
     width: 75%;
     padding: 15% 0;
     border-radius: 30px;
     text-align: center;
     font-size: 140%;
     color: var(--customAlabaster);
+}
+#answer4:hover{
+    background: var(--buttonGradientOrange);
 }
 .pointsCounter{
     width: 200%;
@@ -66,6 +78,7 @@ body{
     margin: auto;
     padding: 1% 0 1% 10%;
     font-size: 160%;
+    color: var(--customAlabaster);
 }
 .questionNumber{
     width: 200%;
@@ -87,9 +100,10 @@ body{
 }
 .innerEndingScreen{
     padding: 5%;
+    font-size: 150%;
 }
 #toHighscores{
-    background-color: var(--customRed);
+    background: var(--customRed);
     width: 10%;
     padding: 1%;
     border-radius: 30px;
@@ -110,7 +124,7 @@ body{
     font-size: 150%;
 }
 #toMainMenu{
-    background-color: var(--customRed);
+    background: var(--customRed);
     width: 10%;
     padding: 1%;
     border-radius: 30px;
@@ -131,4 +145,11 @@ body{
 .innerHighScoreScreen{
     padding: 5%;
     margin-bottom: 30%;
+    font-size: 120%;
+}
+#toMainMenu:hover{
+    background: var(--buttonGradientRed);
+}
+#toHighscores:hover{
+    background: var(--buttonGradientRed);
 }

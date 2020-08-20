@@ -1,5 +1,5 @@
 #createdBy{
-    color: var(--customViolet);
+    color: var(--customLightBlue);
     text-align: center;
     font-size: 450%;
 }
@@ -19,10 +19,13 @@
     margin-left: 60%;
 }
 .creatorsContainer{
-    background-color: var(--customViolet);
+    background: var(--customLightBlue);
     width: 40%;
     height: 25em;
     text-align: center;
     margin: 1% auto;
     color: var(--customAlabaster);
+}
+#back:hover{
+    background: var(--buttonGradientRed);
 }

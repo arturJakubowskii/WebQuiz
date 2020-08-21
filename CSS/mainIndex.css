@@ -6,8 +6,8 @@ body{
     width: 40%;
     height: 25em;
     text-align: center;
-    margin: 1% auto;
     color: var(--customAlabaster);
+    margin: 3% auto;
 }
 .answersContainer{
     width: calc(100% - 25%);
@@ -96,7 +96,7 @@ body{
     height: 80%;
     text-align: center;
     color: var(--customAlabaster);
-    margin: 0.5% auto 1%;
+    margin: 7% auto 4%;
 }
 .innerEndingScreen{
     padding: 5%;
@@ -152,4 +152,7 @@ body{
 }
 #toHighscores:hover{
     background: var(--buttonGradientRed);
+}
+.auto{
+    height: auto;
 }
